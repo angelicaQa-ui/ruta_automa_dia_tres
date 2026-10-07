@@ -1,25 +1,24 @@
-# Pruebas Automatizadas E2E - Día 2 (Playwright + TypeScript)
+# Pruebas Automatizadas E2E - Día 3 (Playwright + IA + GitHub Copilot)
 
-Repositorio que contiene la solución automatizada del ejercicio práctico del Día 2, utilizando **Playwright**, **TypeScript** y el patrón de pruebas orientado a calidad de software en un ambiente sandbox autorizado.
+Repositorio correspondiente al tercer día del plan de capacitación, enfocado en la integración de Inteligencia Artificial para la generación, análisis, refactorización y mantenimiento de pruebas automatizadas utilizando **GitHub Copilot** y **Playwright**
 
 ---
 
 ## Tecnologías y Herramientas Utilizadas
-* **Playwright** (Test runner y motor de automatización web).
-* **TypeScript** (Lenguaje de programación tipado).
-* **Node.js** (Entorno de ejecución).
+* **Playwright** (Test runner y framework de automatización)
+* **TypeScript** (Lenguaje tipado)
+* **GitHub Copilot** (Asistente de IA para desarrollo y testing)
+* **Node.js** (Entorno de ejecución)
 * **Dotenv** (Gestión segura de variables de entorno).
-* **VS Code** (Editor de código).
 
 ---
 
-## Alcance del Proyecto y Casos Implementados
-El script automatiza el flujo estricto requerido: **Login → búsqueda/filtrado → acción principal → validación → logout**, cubriendo los siguientes escenarios:
-1. **Happy Path:** Flujo E2E completo de compra/transacción exitosa.
-2. **Caso Negativo 1:** Intento de acceso con credenciales incorrectas.
-3. **Caso Negativo 2:** Bloqueo de flujo por campos obligatorios vacíos.
-4. **Validación de Datos:** Verificación de formato correcto en precios o datos en pantalla.
-5. **Validación de Mensajes:** Comprobación del texto exacto arrojado por alertas del sistema.
+## Alcance y Ejercicios del Día 3
+El desarrollo de este día contempló la aplicación de flujos asistidos por IA para medir la optimización de tiempos y buenas prácticas:
+1. **Análisis de Historia de Usuario:** Desglose de escenarios positivos, negativos y casos límite (*boundary cases*) mediante prompts de IA
+2. **Generación Asistida:** Creación de scripts de prueba en TypeScript utilizando selectores robustos y *web-first assertions*
+3. **Refactorización (POM):** Reestructuración del código bajo el patrón de diseño *Page Object Model* (POM) para garantizar mantenibilidad sin alterar el comportamiento funcional
+4. **Diagnóstico de Errores y Auto-reparación (*Healer*):** Pruebas de resiliencia ante rotura deliberada de locatarios y análisis de causa raíz apoyados por agentes de IA
 
 ---
 
@@ -27,6 +26,6 @@ El script automatiza el flujo estricto requerido: **Login → búsqueda/filtrado
 
 ### 1. Clonar el repositorio y configurar dependencias
 ```bash
-git clone <URL_DE_TU_REPOSITORIO>
-cd <NOMBRE_DE_LA_CARPETA>
+git clone [https://github.com/angelicaQa-ui/ruta_automa_dia_tres.git](https://github.com/angelicaQa-ui/ruta_automa_dia_tres.git)
+cd ruta_automa_dia_tres
 npm install
