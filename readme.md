@@ -1,31 +1,39 @@
-# Pruebas Automatizadas E2E - Día 3 (Playwright + IA + GitHub Copilot)
+# Ruta de Automatización - Día 3: IA, GitHub Copilot y Page Object Model (POM)
 
-Repositorio correspondiente al tercer día del plan de capacitación, enfocado en la integración de Inteligencia Artificial para la generación, análisis, refactorización y mantenimiento de pruebas automatizadas utilizando **GitHub Copilot** y **Playwright**
-
----
-
-## Tecnologías y Herramientas Utilizadas
-* **Playwright** (Test runner y framework de automatización)
-* **TypeScript** (Lenguaje tipado)
-* **GitHub Copilot** (Asistente de IA para desarrollo y testing)
-* **Node.js** (Entorno de ejecución)
-* **Dotenv** (Gestión segura de variables de entorno).
+Este repositorio contiene las evidencias y el desarrollo correspondiente al **Día 3** de la ruta de capacitación en automatización de pruebas, enfocado en la integración de Inteligencia Artificial (GitHub Copilot, ecosistema de agentes y protocolos MCP), análisis de requerimientos con historias de usuario, arquitectura POM y resiliencia en pruebas E2E.
 
 ---
 
-## Alcance y Ejercicios del Día 3
-El desarrollo de este día contempló la aplicación de flujos asistidos por IA para medir la optimización de tiempos y buenas prácticas:
-1. **Análisis de Historia de Usuario:** Desglose de escenarios positivos, negativos y casos límite (*boundary cases*) mediante prompts de IA
-2. **Generación Asistida:** Creación de scripts de prueba en TypeScript utilizando selectores robustos y *web-first assertions*
-3. **Refactorización (POM):** Reestructuración del código bajo el patrón de diseño *Page Object Model* (POM) para garantizar mantenibilidad sin alterar el comportamiento funcional
-4. **Diagnóstico de Errores y Auto-reparación (*Healer*):** Pruebas de resiliencia ante rotura deliberada de locatarios y análisis de causa raíz apoyados por agentes de IA
+## Contexto y Requerimiento de Negocio (Historia de Usuario)
+* **Historia Base:** Como usuario registrado en la plataforma *SauceDemo*, quiero iniciar sesión, navegar por el catálogo, agregar productos al carrito y completar el flujo de compra hasta la confirmación de la orden, para asegurar el correcto funcionamiento E2E de la tienda online y validar los comportamientos ante errores o datos inválidos.
+* **Matriz de Pruebas Derivada con IA:** Cobertura de escenarios positivos (Happy Path), negativos (bloqueos y autenticación fallida) y casos límite (*boundary cases*).
 
 ---
 
-## Instrucciones de Instalación y Ejecución
+## Resumen de Actividades Realizadas
 
-### 1. Clonar el repositorio y configurar dependencias
-```bash
-git clone [https://github.com/angelicaQa-ui/ruta_automa_dia_tres.git](https://github.com/angelicaQa-ui/ruta_automa_dia_tres.git)
-cd ruta_automa_dia_tres
-npm install
+1. **Análisis de Requerimientos con IA:**
+   * Utilización de prompts estructurados para la extracción de escenarios de prueba sobre el flujo de compra E2E.
+2. **Refactorización bajo Page Object Model (POM):**
+   * Migración del script inicial hacia una arquitectura modular y escalable.
+   * Creación de clases independientes: `LoginPage` e `InventoryPage`.
+3. **Resiliencia, Diagnóstico y Manejo de Errores (*Healer*):**
+   * Simulación deliberada de fallos en selectores del DOM para evaluar el diagnóstico asistido por IA y corrección de aserciones en flujos negativos.
+4. **Stack Tecnológico Avanzado:**
+   * Análisis conceptual e integración de flujos asistidos con GitHub Copilot para el diagnóstico de selectores.
+   * Configuración y diseño preparado para la adopción de Model Context Protocol (MCP) y agentes autónomos de Playwright en la automatización de pruebas E2E.
+
+---
+
+## Tecnologías Utilizadas
+* **Playwright** (Framework E2E)
+* **TypeScript** (Tipado estático)
+* **GitHub Copilot** (Asistente de IA)
+* **Node.js & @types/node** (Entorno y tipos globales)
+
+---
+
+## Instrucciones de Ejecución
+1. Instalar dependencias: `npm install`
+2. Ejecutar la suite: `npx playwright test`
+3. Ejecutar en modo visual: `npx playwright test --ui`
